@@ -1,0 +1,27 @@
+{
+  "name": "kata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jest": "^25.2.7"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.9.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "babel": {
+    "env": {
+      "test": {
+        "plugins": [
+          "@babel/plugin-transform-modules-commonjs"
+        ]
+      }
+    }
+  }
+}
