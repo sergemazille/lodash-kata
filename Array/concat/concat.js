@@ -2,8 +2,9 @@
 
 /**
  * Creates a new array concatenating array with any additional arrays and/or values.
- * @param [...]
- * @return []
+ * @param array (Array): The array to concatenate.
+ * @param [values] (...*): The values to concatenate.
+ * @return (Array): Returns the new concatenated array.
  */
 
 export default (...args) => {

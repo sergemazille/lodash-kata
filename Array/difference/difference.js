@@ -3,8 +3,9 @@
 /**
  * Creates an array of array values not included in the other given arrays using SameValueZero for equality comparisons.
  * The order and references of result values are determined by the first array.
- * @param [], []
- * @return []
+ * @param array (Array): The array to inspect.
+ * @param [values] (...Array): The values to exclude.
+ * @return (Array): Returns the new array of filtered values.
  */
 
 export default (refValuesArray, excludingValuesArray = []) => {
