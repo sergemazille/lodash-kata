@@ -1,4 +1,4 @@
-// https://lodash.com/docs/4.17.15#drop
+// https://lodash.com/docs/4.17.15#dropRight
 
 /**
  * Creates a slice of array with n elements dropped from the end.
