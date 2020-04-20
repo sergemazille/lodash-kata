@@ -33,4 +33,14 @@ describe('lastIndexOf', () => {
 
     expect(testCase).toEqual(expected);
   });
+
+  it("recherche d'une valeur non présente", () => {
+    const refValuesArray = [1, 2, 3, 4, 5, 6];
+    const valueToSearchIndexFor = 7;
+
+    const testCase = lastIndexOf(refValuesArray, valueToSearchIndexFor);
+    const expected = -1;
+
+    expect(testCase).toEqual(expected);
+  });
 });

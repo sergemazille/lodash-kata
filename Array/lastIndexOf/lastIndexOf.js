@@ -17,7 +17,7 @@ export default (
     throw new TypeError();
   }
 
-  let result;
+  let result = -1;
 
   for (let i = fromIndex; i >= 0; i--) {
     if(refValuesArray[i] === value) {
