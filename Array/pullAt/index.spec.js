@@ -28,7 +28,6 @@ describe('pullAt', () => {
     expect(testCase).toEqual(expected);
   })
 
-  
   it("le tableau original est bien modifié (mutation)", () => {
     const refValuesArray = ['a', 'b', 'c', 'd', 'e'];
     const indexesToPull = [2, 4];
