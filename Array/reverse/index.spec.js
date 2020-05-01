@@ -17,4 +17,13 @@ describe('reverse', () => {
 
     expect(testCase).toEqual(expected);
   });
+
+  it('le tableau original est bien modifié (mutation)', () => {
+    const refValuesArray = ['a', 'b', 'c', 'd', 'e', 'f'];
+
+    reverse(refValuesArray);
+    const expected = ['f', 'e', 'd', 'c', 'b', 'a'];
+
+    expect(refValuesArray).toEqual(expected);
+  });
 });

@@ -16,10 +16,11 @@ export default (refValuesArray) => {
   const reversedArray = [];
   const lastIndex = refValuesArray.length - 1;
 
-  for (let i = lastIndex; i >=0; i--) {
-    reversedArray.push(refValuesArray[i]);
+  for (let i = lastIndex; i >= 0; i--) {
+    reversedArray.push(...refValuesArray.splice(i, 1));
   }
 
-  refValuesArray = reversedArray;
+  reversedArray.forEach((item) => refValuesArray.push(item));
+
   return refValuesArray;
 };
