@@ -12,7 +12,7 @@ describe('reverse', () => {
   it('retourne un tableau inversé', () => {
     const refValuesArray = ['a', 'b', 'c', 'd', 'e', 'f'];
 
-    const testCase = reverse([refValuesArray]);
+    const testCase = reverse(refValuesArray);
     const expected = ['f', 'e', 'd', 'c', 'b', 'a'];
 
     expect(testCase).toEqual(expected);
